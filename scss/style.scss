@@ -35,25 +35,37 @@ body{
     margin: 20px auto;
     color: white;
     opacity: 0.9;
+    transition: 0.5s;
+    
+  }
+
+  button:hover{
     cursor: pointer;
+    background: white;
+    color: lightgray;
+  }
+
+  button.selected{
+    background: white;
+    color: lightgray;
+  }
+
+  p{
+    display: flex;
+    max-width: 800px;
+    max-height: 500px;
+    color: white;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: lightgray;
+    font-size: 20px;
+    opacity: 0.9;
+    margin-left: 320px;
+    margin: 50px auto;
   }
 
   .tabai{
-
-    p{
-      display: flex;
-      max-width: 800px;
-      max-height: 300px;
-      color: white;
-      align-items: center;
-      border: 1px solid white;
-      border-radius: 5px;
-      background: lightgray;
-      font-size: 20px;
-      opacity: 0.9;
-      margin-left: 320px;
-      margin: 50px auto;
-    }
     
     img {
       max-width: 800px;
@@ -62,9 +74,15 @@ body{
       object-position: center;
       border-radius: 5px;
       border: 1px solid white;
-      box-shadow: 5px 5px 5px lightgray
+      box-shadow: 5px 5px 5px lightgray;
+    }
+
+    .tab{
+      display: none;
     }
   }
 }
+
+
 
 
